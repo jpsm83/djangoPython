@@ -29,9 +29,13 @@ class Room(models.Model):
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        # "-" means descendente, without means ascendent
+        ordering = ['-updated', '-created']
+
     def __str__(self):
         return self.name
-    
+        
 class Message(models.Model):
     # relation with User
     user = models.ForeignKey(User, on_delete=models.CASCADE)
