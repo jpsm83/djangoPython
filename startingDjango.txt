@@ -1,0 +1,52 @@
+"pip" is the standard package manager for Python. It enables the installation and management of third party packages that provide
+install python
+
+it a good practice to install and develp a project in a separate inviorament
+cdm as administrator
+pip install virtualenv
+
+command for virtualenv
+create a new enviorament command
+virtualenv env
+
+activate the enviorament just created
+env\scripts\activate
+
+desactivate the enviorament just created
+env\scripts\deactivate
+
+install django in the project folder
+pip install django
+this create a project djanto in a virtual enviorament
+
+django-admin
+shows you all the command lines for django
+
+django-admin startproject <project name>
+this command will start a new project
+add " ." at the end to create the project at the same directory
+not creating a new directory and them a project inside it
+django-admin startproject <project name> .
+
+python manage.py
+show all the command lines for phyton
+those commands are the same as django ones
+but we use python to run services for example
+because django doesnt know the settings of the project
+python knows
+
+python manage.py runservice <port number>
+port number is opcional, by default will be created at 8000
+server will be start
+
+done, project is create and running in the server
+
+pipenv --venv
+change the python path on visual studio to be running properly
+will show the path that python uses to run the aplication
+ex: \Users\integral\.virtualenvs\djangoBack-2Nl-N0vO
+add "\bin\python" to complete the direction
+\Users\integral\.virtualenvs\djangoBack-2Nl-N0vO\bin\python
+
+python manage.py startapp <app name>
+create a new app to use in the project
