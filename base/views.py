@@ -81,7 +81,7 @@ def room(request, pk):
     # in this case 'message_set.all()' will enter in the parent MESSAGE
     # and bring back all messages relate to the child ROOM 
     room_messages = room.message_set.all().order_by('-created')
-
+# messages
     if request.method == 'POST':
         message = Message.objects.create(
             user = request.user,
