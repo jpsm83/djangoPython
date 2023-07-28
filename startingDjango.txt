@@ -6,10 +6,12 @@ cdm as administrator
 pip install virtualenv
 
 command for virtualenv
-create a new enviorament command
+create a new enviorament command with whatever name you want (usualy "env")
+virtualenv <virtual machine name>
 virtualenv env
+this will create a new folder for the VM
 
-activate the enviorament just created
+get in the new VM folder and activate the enviorament just created
 env\scripts\activate
 
 desactivate the enviorament just created
@@ -19,14 +21,22 @@ install django in the project folder
 pip install django
 this create a project djanto in a virtual enviorament
 
+check if django been install properly
+py -m django --version
+that should return django version
+
 django-admin
 shows you all the command lines for django
 
 django-admin startproject <project name>
-this command will start a new project
+this command will start a django new project
 add " ." at the end to create the project at the same directory
 not creating a new directory and them a project inside it
 django-admin startproject <project name> .
+
+now you need create an "app" to work with on this project
+python manage.py startapp <app name, usualy is "base">
+add the app to be seen at settings
 
 python manage.py
 show all the command lines for phyton
@@ -55,3 +65,12 @@ create a admin user to access the aplicacion
 python manage.py createsuperuser
 fill the form
 now you can access your localhost/admin
+
+django-rest-framework.org
+framework to work with apis in django
+pip install djangorestframework
+
+setup cors
+python -m pip install django-cors-headers
+-m stants for "module"
+you need to config cors to accept 3tr part requests
